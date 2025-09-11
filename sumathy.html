@@ -1,0 +1,226 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Profile Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1400&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+
+    nav {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 15px 30px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav h1 {
+      font-size: 24px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-left: 25px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #00aced;
+    }
+
+    section {
+      padding: 100px 20px 60px;
+      min-height: 100vh;
+    }
+
+    .profile-card {
+      background-color: rgba(0, 0, 0, 0.75);
+      padding: 30px;
+      border-radius: 20px;
+      max-width: 400px;
+      margin: auto;
+      text-align: center;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    }
+
+    .profile-card img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      margin-bottom: 15px;
+    }
+
+    .profile-card h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .profile-card p {
+      font-size: 16px;
+      color: #ccc;
+      margin-bottom: 15px;
+    }
+
+    .icons a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 20px;
+      transition: color 0.3s ease;
+    }
+
+    .icons a:hover {
+      color: #00aced;
+    }
+
+    .skills, .education {
+      max-width: 800px;
+      margin: auto;
+      background-color: rgba(0, 0, 0, 0.75);
+      padding: 30px;
+      border-radius: 20px;
+    }
+
+    .skills h2, .education h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .skills span {
+      background: #00aced;
+      padding: 8px 15px;
+      border-radius: 15px;
+      margin: 6px;
+      display: inline-block;
+      font-size: 15px;
+    }
+
+    .education ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .education li {
+      margin-bottom: 20px;
+      border-left: 4px solid #00aced;
+      padding-left: 15px;
+    }
+
+    .education h3 {
+      margin-bottom: 5px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+      }
+      nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <h1>My Profile</h1>
+    <ul>
+      <li><a href="#profile">Profile</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+    </ul>
+  </nav>
+
+  <!-- Profile Section -->
+  <section id="profile">
+    <div class="profile-card">
+      <a href="https://ibb.co/5XP5mcb7"><img src="https://i.ibb.co/5XP5mcb7/IMG-20250911-101343.jpg">
+      <h2>sumathy</h2>
+      <p>BSc Computer Science | Year 2</p>
+      <div class="icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="skills">
+      <h2>Skills</h2>
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>Python</span>
+      <span>React</span>
+      <span>Git & GitHub</span>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education">
+    <div class="education">
+      <h2>Education</h2>
+      <ul>
+        <li>
+          <h2>BSc Computer Science</h2>
+          <p>siga college 2025,- Present</p>
+        </li>
+        <li>
+          <h3>High School</h3>
+          <p>government higher secondary school</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 sumathy | Student Profile
+  </footer>
+
+</body>
+</html>
